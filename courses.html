@@ -39,11 +39,6 @@
     <div class="container-fluid bg-light d-none d-lg-block" style="background-color: rgba(61,46,13,255) !important;">
         <div class="row py-2 px-lg-5">
             <div class="col-lg-6 text-left mb-2 mb-lg-0">
-                <!-- <div class="d-inline-flex align-items-center">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
-                    <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
-                </div> -->
             </div>
             <div class="col-lg-6 text-right">
                 <div class="d-inline-flex align-items-center">
@@ -56,9 +51,6 @@
                     <a class="text-primary px-2" href="" style="color: white !important;">
                          <i class="fab fa-whatsapp"></i>
                      </a>
-                    <!-- <a class="text-primary pl-2" href="">
-                        <i class="fab fa-youtube"></i>
-                    </a> -->
                 </div>
             </div>
         </div>
@@ -90,15 +82,6 @@
                     <!-- <a href="p" class="nav-item nav-link">Precios</a> -->
                 
                         <a href="courses.html"class="nav-item nav-link">Cursos</a>
-                        <!-- <div class="dropdown-menu rounded-0 m-0">
-                            <a href="#" class="dropdown-item">Extension de pestañas</a>
-                            <a href="#" class="dropdown-item">Perfilado y laminado de cejas</a>
-                            <a href="#" class="dropdown-item">Lifting de pestañas</a>
-                            <a href="#" class="dropdown-item">Baby Lips</a>
-                            <a href="#" class="dropdown-item">Tecnicas de higiene y retención</a>
-                        </div> -->
-              
-                    <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
                 </div>
                 <!-- <a href="" class="btn btn-primary d-none d-lg-block" >Contacto</a> -->
             </div>
@@ -113,11 +96,13 @@
                 <h6 class="section-title bg-white text-center text-primary px-3" style="color: black !important;">Cursos</h6>
                 <h1 class="mb-5">Nuestros Cursos</h1>
             </div>
+
+     <!-- Curso PXP -->
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/curso1.jpg" alt="">
+                            <img class="img-fluid" src="img/curso2.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#openModal1" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Saber más</a>  
                                 <div id="openModal1" class="modalDialog">
@@ -126,74 +111,35 @@
                                         <h2>Certificación en técnica clásica PXP</h2>
                                         <p>Semipresencial - Grupal</p>
                                         <p>Explora una de las técnicas más solicitadas para la colocación de extensiones de pestañas:
-
-                                            La Técnica Clásica consiste en aplicar una extensión de pestaña en cada pestaña natural.
-                                            
-                                            Este enfoque detallado y elegante realza la belleza natural de tus pestañas. ¡Aprende las habilidades de la Técnica Clásica con nosotras!</p>
+                                        La Técnica Clásica consiste en aplicar una extensión de pestaña en cada pestaña natural.
+                                        Este enfoque detallado y elegante realza la belleza natural de tus pestañas. ¡Aprende las habilidades de la Técnica Clásica con nosotras!</p>
                                     </div>
                                 </div>                    
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Comprar</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$30.000</h3>
+                            <h3 class="mb-0" id="precioCurso1">$30.000</h3>
                             <div class="mb-3">
-                                <!-- <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small> -->
-                                <small>Semipresencial</small>
+                                <select id="modalidadSelect1" onchange="updateCourseDetails(1)">
+                                    <option value="semipresencial">Semipresencial</option>
+                                    <option value="personalizado">Personalizado</option>
+                                </select>
                             </div>
-                            <h5 class="mb-4">Certificación en técnica clásica PXP</h5>
+                            <h5 class="mb-4">Certificación en técnica clásica</h5>
                         </div>
                         <div class="d-flex border-top">
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>Luciana Antonella</small>
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>4 clases</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>4 estudiantes</small>
+                            <small class="flex-fill text-center py-2" id="estudiantesCurso1"><i class="fa fa-user text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>4 estudiantes</small>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/curso2.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#openModal2" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Saber más</a>  
-                                <div id="openModal2" class="modalDialog">
-                                    <div>
-                                        <a href="#close" title="Close" class="close">X</a>
-                                        <h2>Certificación en técnica clásica PXP</h2>
-                                        <p>Semipresencial - Personalizado</p>
-                                        <p>Explora una de las técnicas más solicitadas para la colocación de extensiones de pestañas:
 
-                                            La Técnica Clásica consiste en aplicar una extensión de pestaña en cada pestaña natural.
-                                            
-                                            Este enfoque detallado y elegante realza la belleza natural de tus pestañas. ¡Aprende las habilidades de la Técnica Clásica con nosotras!</p>
-                                    </div>
-                                </div>    
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Comprar</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$45.000</h3>
-                            <div class="mb-3">
-                                <!-- <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small> -->
-                                <small>Semipresencial - Personalizado</small>
-                            </div>
-                            <h5 class="mb-4">Certificación en técnica clásica PXP</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>Luciana Antonella</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>4 clases</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>1 estudiante</small>
-                        </div>
-                    </div>
-                </div>
+       <!-- Curso PXP -->
+
+    
+     <!-- Curso Master Cejas -->   
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
@@ -212,14 +158,11 @@
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$15.000</h3>
+                            <h3 class="mb-0" id="precioCurso2">$15.000</h3>
                             <div class="mb-3">
-                                <!-- <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small> -->
-                                <small>100% Online</small>
+                                <select id="modalidadSelect2" onchange="updateCourseDetails(2)">
+                                <option value="online">100% Online</option>
+                            </select>
                             </div>
                             <h5 class="mb-4">Máster en cejas</h5>
                         </div>
@@ -230,17 +173,20 @@
                         </div>
                     </div>
                 </div>
+
+    <!-- Curso Master Cejas --> 
+
+    <!-- Curso Lash Lifting --> 
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/curso4.jpg" alt="">
+                            <img class="img-fluid" src="img/curso4viejo.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#openModal4" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Saber más</a>  
                                 <div id="openModal4" class="modalDialog">
                                     <div>
                                         <a href="#close" title="Close" class="close">X</a>
                                         <h2>Certificación lash lifting</h2>
-                                        <p>Presencial - Semipresencial - 100% Online</p>
                                         <p>Eleva tus conocimientos en el mundo de las pestañas con nuestro curso de Lash Lifting. Aprende a resaltar la belleza natural de las pestañas, creando un efecto de elevación y curvatura espectacular. Con técnicas de vanguardia y productos de alta calidad, te convertirás en una experta en realzar la mirada de tus clientas.</p>
                                     </div>
                                 </div>    
@@ -248,14 +194,13 @@
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$15.000</h3>
+                            <h3 class="mb-0" id="precioCurso3">$15.000</h3>
                             <div class="mb-3">
-                                <!-- <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small> -->
-                                <small>Presencial - Semipresencial - Online</small>
+                                <select id="modalidadSelect3" onchange="updateCourseDetails(3)">
+                                    <option value="semipresencial">Semipresencial</option>
+                                    <option value="personalizado">Personalizado</option>
+                                    <option value="online">100% Online</option>
+                                </select>
                             </div>
                             <h5 class="mb-4">Certificación lash lifting</h5>
                         </div>
@@ -266,6 +211,11 @@
                         </div>
                     </div>
                 </div>
+
+    <!-- Curso Lash Lifting --> 
+
+    <!-- Curso Baby Lips --> 
+
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
@@ -284,9 +234,12 @@
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$17.000</h3>
+                            <h3 class="mb-0" id="precioCurso4">$17.000</h3>
                             <div class="mb-3">
-                                <small>Semipresencial</small>
+                                <select id="modalidadSelect4" onchange="updateCourseDetails(4)">
+                                    <option value="semipresencial">Semipresencial</option>
+                                    <option value="personalizado">Personalizado</option>
+                                </select>
                             </div>
                             <h5 class="mb-4">Certificación en baby lips</h5>
                         </div>
@@ -297,45 +250,89 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/curso6.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#openModal6" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Saber más</a>  
-                                <div id="openModal6" class="modalDialog">
-                                    <div>
-                                        <a href="#close" title="Close" class="close">X</a>
-                                        <h2>Certificación en baby lips</h2>
-                                        <p>Presencial - Personalizado</p>
-                                        <p>Nuestro curso Baby Lips te enseñará cómo lograr unos labios irrestibles. Aprende a cuidar y realzar tus labios con técnicas y productos de vanguardia. Descubre la magia de unos labios perfectamente hidratados y resaltar la sonrisa con confianza.</p>
-                                    </div>
-                                </div>    
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Comprar</a>
-                            </div>
+
+  <!-- Curso Baby Lips --> 
+
+<!-- Curso 5 --> 
+
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="course-item bg-light">
+            <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/curso5.jpg" alt="">
+                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                    <a href="#openModal5" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Saber más</a>  
+                    <div id="openModal5" class="modalDialog">
+                        <div>
+                            <a href="#close" title="Close" class="close">X</a>
+                            <h2>Certificación</h2>
+                            <p>Semipresencial - Grupal</p>
+                            <p>Nuestro curso Baby Lips te enseñará cómo lograr unos labios irrestibles. Aprende a cuidar y realzar tus labios con técnicas y productos de vanguardia. Descubre la magia de unos labios perfectamente hidratados y resaltar la sonrisa con confianza.</p>
                         </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$30.000</h3>
-                            <div class="mb-3">
-                                <!-- <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small> -->
-                                <small>Presencial - Personalizado</small>
-                            </div>
-                            <h5 class="mb-4">Certificación en baby lips</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>Luciana Antonella</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>1 clase</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>1 estudiante</small>
-                        </div>
-                    </div>
+                    </div>    
+                    <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Comprar</a>
                 </div>
+            </div>
+            <div class="text-center p-4 pb-0">
+                <h3 class="mb-0" id="precioCurso4">$17.000</h3>
+                <div class="mb-3">
+                    <select id="modalidadSelect4" onchange="updateCourseDetails(4)">
+                        <option value="semipresencial">Semipresencial</option>
+                        <option value="personalizado">Personalizado</option>
+                    </select>
+                </div>
+                <h5 class="mb-4">Certificación</h5>
+            </div>
+            <div class="d-flex border-top">
+                <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>Luciana Antonella</small>
+                <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>1 clase</small>
+                <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>5 estudiantes</small>
             </div>
         </div>
     </div>
+
+<!-- Curso 5--> 
+
+
+<!-- Curso 6 --> 
+
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="course-item bg-light">
+            <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/curso5.jpg" alt="">
+                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                    <a href="#openModal5" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Saber más</a>  
+                    <div id="openModal5" class="modalDialog">
+                        <div>
+                            <a href="#close" title="Close" class="close">X</a>
+                            <h2>Certificación</h2>
+                            <p>Semipresencial - Grupal</p>
+                            <p>Nuestro curso Baby Lips te enseñará cómo lograr unos labios irrestibles. Aprende a cuidar y realzar tus labios con técnicas y productos de vanguardia. Descubre la magia de unos labios perfectamente hidratados y resaltar la sonrisa con confianza.</p>
+                        </div>
+                    </div>    
+                    <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Comprar</a>
+                </div>
+            </div>
+            <div class="text-center p-4 pb-0">
+                <h3 class="mb-0" id="precioCurso4">$17.000</h3>
+                <div class="mb-3">
+                    <select id="modalidadSelect4" onchange="updateCourseDetails(4)">
+                        <option value="semipresencial">Semipresencial</option>
+                        <option value="personalizado">Personalizado</option>
+                    </select>
+                </div>
+                <h5 class="mb-4">Certificación</h5>
+            </div>
+            <div class="d-flex border-top">
+                <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>Luciana Antonella</small>
+                <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>1 clase</small>
+                <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2" style="color: rgba(13, 13, 13, 0.744) !important"></i>5 estudiantes</small>
+            </div>
+        </div>
+    </div>
+
+<!-- Curso 6--> 
+
+
     <!-- Courses End -->
 
 
